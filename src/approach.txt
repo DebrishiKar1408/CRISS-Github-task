@@ -1,0 +1,6 @@
+I would generate the values for the IMU as per the instructions given using a loop. It should continue for 10 seconds (a message is published every 100 milliseconds)
+An easy to understand way would be to append all the values to a float64 multiarray
+We could access each value from the array within the subscriber node
+
+After accessing the values in the subscriber node, I use a filter (https://gist.github.com/phausamann/721fa3df0f8ef6f4f6f24b86fdde53c0)
+to convert the values to the imu format within the callback function 
