@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 import rospy
 from std_msgs.msg import Float64MultiArray
-import random
 def talker():
-    #Initialising random values for the linear and angular accelaration vectors
     Lx=0
     Ly=0
     Lz=0
