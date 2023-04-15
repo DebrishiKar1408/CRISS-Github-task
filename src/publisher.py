@@ -20,7 +20,7 @@ def talker():
     for i in range(100):
         my_msg = Float64MultiArray() 
         rate = rospy.Rate(10) # 10hz
-        d = [[Ax,Ay,Az+rAz],[Lx+rLx,Ly,Lz],g]
+        d = [[Ax,Ay,Az+rAz],[Lx+rLx,Ly,Lz],g,t]
         d= [[float(d[i][j]) for j in range(len(d))]for i in range (len(d[0]))]
         #Forcibly converting the values to float
         my_msg.data=d
